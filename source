@@ -1,0 +1,54 @@
+void setup() {
+  Serial.begin(9600); 
+}
+
+void loop() {
+
+}
+
+int arraySetup(int lowestPin, int highestPin) {
+  for (lowestPin = 7; lowestPin <= highestPin; lowestPin++) {
+    pinMode(lowestPin, OUTPUT);
+}
+  pinMode(4, INPUT);
+  Serial.println("All LEDs are now outputs");  
+}
+
+void arrayBlinkTest(int lowestPin, int highestPin) {
+  for (lowestPin = lowestPin; lowestPin <= highestPin; lowestPin++) {
+    digitalWrite(lowestPin, HIGH);
+    delay(250);
+    digitalWrite(lowestPin, LOW);
+    delay(250);
+  }
+}
+
+int arrayAllOn(int lowestPin, int highestPin) {
+  for (lowestPin = lowestPin; lowestPin <= highestPin; lowestPin++) {
+    digitalWrite(lowestPin, HIGH);
+    delay(250);
+    Serial.println("All LEDs are now on");
+  }
+}
+
+int arrayAllOff(int lowestPin, int highestPin) {
+  for (lowestPin = lowestPin; lowestPin <= highestPin; lowestPin++) {
+    digitalWrite(lowestPin, LOW);
+    delay(250);
+    Serial.println("All LEDs are now off");
+  }  
+}
+
+int arrayFlash(int lowestPin, int highestPin){
+  int i = 1;
+  for(i = 1; i <= 100; i++){
+    for(lowestPin = lowestPin; lowestPin <= highestPin; lowestPin++) {
+       digitalWrite(lowestPin, HIGH);
+    }
+    for(lowestPin = lowestPin; lowestPin <= highestPin; lowestPin++) {
+       digitalWrite(lowestPin, LOW);
+    }
+  }
+}
+
+
