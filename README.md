@@ -25,9 +25,17 @@ Flash:
 Function: arrayFlash(lowestPin, highestPin)
 What it does: This function uses a series of nested loops in order to turn all the components on and off 100 times
 
-Motor SetuP:
+Motor Setup:
 Function: motorSetup(lowestPin, highestPin)
 What it does: Goes from the lowest Pin to the highest pin and sets each pin as an output
+
+Motor Test:
+motorTest(lowestPin, highestPin)
+What it does: Turns every motor on, one by one, for a short period of time
+
+Motor All Off:
+Function: motorAllOff(lowestPin, highestPin)
+What it does: Turns each motor off in succesion from the lowest to the highest pin 
 
 #Technicalities 
 - Make sure the serial monitor has been started before using the functions, as many of them output text to the monitor
