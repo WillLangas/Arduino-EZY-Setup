@@ -22,10 +22,15 @@ Function: arrayAllOff(lowestPin, highestPin)
 What it does: This function does the opposite of arrayAllOn, and just turns off all the components in the array
   
 Flash:
-Function: arrayFlash(lowestpin, highestPin)
+Function: arrayFlash(lowestPin, highestPin)
 What it does: This function uses a series of nested loops in order to turn all the components on and off 100 times
+
+Motor SetuP:
+Function: motorSetup(lowestPin, highestPin)
+What it does: Goes from the lowest Pin to the highest pin and sets each pin as an output
 
 #Technicalities 
 - Make sure the serial monitor has been started before using the functions, as many of them output text to the monitor
 - Make sure to put integers in the parameters of the functions for the lowest and highest pins being used
 - All of the functions must be defined in the program, I am currently working on making a library with them 
+- For the motor setup functions, all pins must have PWM. These pins are marked with, "~" on the Arduino board
