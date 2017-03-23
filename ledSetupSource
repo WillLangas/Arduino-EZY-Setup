@@ -7,7 +7,7 @@ void loop() {
 }
 
 int arraySetup(int lowestPin, int highestPin) {
-  for (lowestPin = 7; lowestPin <= highestPin; lowestPin++) {
+  for (lowestPin = lowestPin; lowestPin <= highestPin; lowestPin++) {
     pinMode(lowestPin, OUTPUT);
 }
   pinMode(4, INPUT);
