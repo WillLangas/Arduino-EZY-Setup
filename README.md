@@ -1,8 +1,8 @@
-# LedArrayTesting
-A short set of Arduino files to quickly set up multiple LEDs in a short amount of time.
+# EZY Setup  
+A short set of Arduino files to quickly set up multiple components in a short amount of time.
 
 #Functions
-Various functions exist in the program in order to accomplish several LED based tasks
+Various functions exist in the program in order to accomplish several tasks
 Here are the functions and what they do:
 
 Array Setup:
@@ -11,19 +11,19 @@ What it does: This function uses two inputs (The lowest pin in use and the highe
   
 Blink Test:
 Function: arrayBlinkTest(lowestPin, highestPin)
-What it does: This function goes through the LEDs, one by one, and blinks them for a quarter of a second
+What it does: This function goes through the LEDs or other components, one by one, and blinks them for a quarter of a second
   
 All On:
 Function: arrayAllOn(lowestPin, highestPin)
-What it does: This function simply goes through all the LEDs and turns them all on, until they are turned off using the arrayAllOff function 
+What it does: This function simply goes through all the components and turns them all on, until they are turned off using the arrayAllOff function 
   
 All Off:
 Function: arrayAllOff(lowestPin, highestPin)
-What it does: This function does the opposite of arrayAllOn, and just turns off all the LEDs in the array
+What it does: This function does the opposite of arrayAllOn, and just turns off all the components in the array
   
 Flash:
 Function: arrayFlash(lowestpin, highestPin)
-What it does: This function uses a series of nested loops in order to turn all the LEDs on and off 100 times
+What it does: This function uses a series of nested loops in order to turn all the components on and off 100 times
 
 #Technicalities 
 - Make sure the serial monitor has been started before using the functions, as many of them output text to the monitor
