@@ -14,7 +14,7 @@ int arraySetup(int lowestPin, int highestPin) {
   Serial.println("All LEDs are now outputs");  
 }
 
-void arrayBlinkTest(int lowestPin, int highestPin) {
+int arrayBlinkTest(int lowestPin, int highestPin) {
   for (lowestPin = lowestPin; lowestPin <= highestPin; lowestPin++) {
     digitalWrite(lowestPin, HIGH);
     delay(250);
