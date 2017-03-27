@@ -33,4 +33,17 @@ int motorAllOff(int lowestPin, int highestPin){
   }
 }
 
+int motorAllSpin(int lowestPin, int highestPin, int duration) {
+  Serial.println("The motors will now function for ");
+  Serial.println(duration / 1000);
+  Serial.println("seconds");
+  for (lowestPin = lowestPin; lowestPin <= highestPin; lowestPin++) {
+    digitalWrite(lowestPin, 150);
+  }
+  delay(duration);
+  for (lowestPin = lowestPin; lowestPin <= highestPin; lowestPin++) {
+    digitalWrite(lowestPin, 0);
+  }
+}
+
 
