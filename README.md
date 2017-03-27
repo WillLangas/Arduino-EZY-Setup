@@ -37,6 +37,10 @@ Motor All Off:
 Function: motorAllOff(lowestPin, highestPin)
 What it does: Turns each motor off in succesion from the lowest to the highest pin 
 
+Motor All Spin:
+Function: motorAllSpin(lowestPin, highestPin, duration)
+What it does: Turns on each motor for a specified duration (Enter the duration in milliseconds)
+
 #Technicalities 
 - Make sure the serial monitor has been started before using the functions, as many of them output text to the monitor
 - Make sure to put integers in the parameters of the functions for the lowest and highest pins being used
