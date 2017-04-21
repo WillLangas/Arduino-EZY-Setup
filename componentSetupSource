@@ -10,7 +10,6 @@ int arraySetup(int lowestPin, int highestPin) {
   for (lowestPin = lowestPin; lowestPin <= highestPin; lowestPin++) {
     pinMode(lowestPin, OUTPUT);
 }
-  pinMode(4, INPUT);
   Serial.println("All components are now outputs");  
 }
 
