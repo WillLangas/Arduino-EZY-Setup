@@ -1,6 +1,7 @@
 # EZY Setup  
 A short set of Arduino files to quickly set up multiple components in a short amount of time.
 
+
 #Functions
 Various functions exist in the program in order to accomplish several tasks
 Here are the functions and what they do:
