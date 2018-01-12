@@ -43,7 +43,7 @@ Motor All Spin:
 Function: motorAllSpin(lowestPin, highestPin, duration)
 What it does: Turns on each motor for a specified duration (Enter the duration in milliseconds)
 
-#Technicalities 
+# Technicalities 
 - Make sure the serial monitor has been started before using the functions, as many of them output text to the monitor
 - Make sure to put integers in the parameters of the functions for the lowest and highest pins being used
 - All of the functions must be defined in the program, I am currently working on making a library with them 
